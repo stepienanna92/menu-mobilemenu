@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 200vh;
+}
+
+.menu {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.menu,
+.nav-list,
+header {
+    height: 300px;
+}
+
+.nav-list {
+    float: left;
+    width: 300px;
+}
+
+nav li {
+    list-style: none;
+}
+
+.nav-list a {
+    display: block;
+    padding: 0 5px 0 30px;
+    color: #363636;
+    line-height: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.nav-list a:hover {
+    color: #ffffff;
+    background-color: #ff6666;
+}
+
+.nav-list i {
+    width: 50px;
+    margin-right: 20px;
+    border-right: solid #363636 2px;
+    transition: .2s;
+}
+
+.nav-list a:hover i {
+    margin-right: 40px;
+}
+
+header {
+    float: left;
+    width: calc(100% - 300px);
+    background-image: url(http://images.unsplash.com/photo-1520420097861-e4959843b682?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9&s=211c3d81ee9c89638352aab53e8495e4);
+    background-position: center;
+    background-size: cover;
+}
+
+.stripe h1 {
+    padding: 13px 50px;
+    background-color: #494949;
+    color: #ffffff;
+    font-size: 35px;
+    font-family: sans-serif;
+    text-align: right;
+}
+
+nav.mobile-version {
+    display: none;
+}
+
+.article {
+    margin: 40px 90px auto 90px;
+}
+
+.article p {
+    font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+
+    .nav-list {
+        display: none;
+    }
+
+    nav.mobile-version {
+        position: fixed;
+        display: block;
+        width: 72px;
+        height: 100%;
+        background-color: #7e7e7e;
+        color: #ffffff;
+    }
+
+    nav.mobile-version a {
+        display: block;
+        line-height: 10vh;
+        color: #ffffff;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    nav.mobile-version li:nth-child(1) a {
+        color: #494949;
+    }
+
+    nav.mobile-version li a:hover {
+        color: #ff6666;
+        font-size: 35px;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    stripe h1 {
+        font-size: 22px;
+    }
+
+    .article p {
+        font-size: 15px;
+    }
+}
